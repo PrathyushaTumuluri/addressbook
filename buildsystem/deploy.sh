@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "docker login"
-docker login -u ${secret_docker_username} -p ${secret_docker_password}
-
 echo "pull docker image"
 docker_web_pull_result=$(docker pull pavaniprathyu/addressbooknew:20210510 2>&1)
 echo $docker_web_pull_result
